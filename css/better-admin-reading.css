@@ -1,0 +1,177 @@
+/*Contributors: Avenue Factory, _hq, Wycks*/
+
+/*-- Default --*/
+
+#adminmenu > li {
+	border-bottom: 1px solid #1D1D1D !important;
+}
+
+#adminmenu div.wp-menu-image:before {
+	color: #746F6F;
+	font: 400 16px/1 dashicons !important;
+}
+
+/*-- Sunrise -- */
+.admin-color-sunrise #adminmenu > li{
+	border-bottom: 1px solid rgba(180, 60, 56, 0.22) !important;
+}
+
+.admin-color-sunrise #adminmenu div.wp-menu-image:before {
+	color: #9E2F2B;
+}
+
+/*--  Light -- */
+.admin-color-light #adminmenu > li{
+	border-bottom: 1px solid rgba(248, 248, 248, 0.55) !important;
+}
+
+.admin-color-light #adminmenu div.wp-menu-image:before {
+	color: #999;
+}
+
+/*--  Blue -- */
+.admin-color-blue #adminmenu > li{
+	border-bottom: 1px solid rgba(71, 150, 179, 0.55) !important;
+}
+
+.admin-color-blue #adminmenu div.wp-menu-image:before {
+	color: rgba(9, 100, 132, 0.8);
+}
+
+/*--  Coffee -- */
+.admin-color-coffee #adminmenu > li{
+	border-bottom: 1px solid rgba(70, 64, 60, 0.55) !important;
+}
+
+.admin-color-coffee #adminmenu div.wp-menu-image:before {
+	color: #C7A589;
+}
+
+/*--  Ectoplasm -- */
+.admin-color-ectoplasm #adminmenu > li{
+	border-bottom: 1px solid rgba(65, 50, 86, 0.48) !important;
+}
+
+.admin-color-ectoplasm #adminmenu div.wp-menu-image:before {
+	color: #A8A8A8;
+}
+
+/*--  Midnight -- */
+.admin-color-midnight #adminmenu > li{
+	border-bottom: 1px solid rgba(37, 40, 43, 0.48) !important;
+}
+
+/*--  Ocean -- */
+.admin-color-ocean #adminmenu > li{
+	border-bottom: 1px solid rgba(98, 124, 131, 0.52) !important;
+}
+
+.admin-color-ocean #adminmenu div.wp-menu-image:before {
+	color: rgba(29, 57, 65, 0.59);
+}
+
+#wpadminbar {
+	box-shadow: 0px -1px 4px #000;
+}
+
+#wpadminbar ul#wp-admin-bar-root-default {
+	margin-left: -1px;
+}
+
+#adminmenu #collapse-menu {
+	margin-top: 0px;
+}
+
+#minor-publishing-actions {
+	padding: 0px;
+}
+
+#adminmenu {
+	margin: 0px;
+}
+
+
+#adminmenu li.wp-menu-separator {
+	display: none;
+}
+
+#adminmenu .wp-submenu,
+.folded #adminmenu a.wp-has-current-submenu:focus+.wp-submenu,
+.folded #adminmenu .wp-has-current-submenu .wp-submenu {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+#adminmenu .wp-has-current-submenu ul>li>a,
+.folded #adminmenu li.menu-top .wp-submenu>li>a {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin: 5px 7px 5px 7px;
+}
+
+#adminmenu a.menu-top,
+#adminmenu .wp-submenu-head {
+	font-size: 12px;
+	font-weight: 600;
+	padding: 4px;
+}
+
+#adminmenu .wp-submenu a {
+	font-size: 12px;
+}
+
+#adminmenu .wp-has-current-submenu .wp-submenu,
+.no-js li.wp-has-current-submenu:hover .wp-submenu,
+#adminmenu a.wp-has-current-submenu:focus+.wp-submenu,
+#adminmenu .wp-has-current-submenu .wp-submenu.sub-open,
+#adminmenu .wp-has-current-submenu.opensub .wp-submenu {
+	padding: 8px 0px;
+}
+
+#adminmenu .wp-not-current-submenu .wp-submenu,
+.folded #adminmenu .wp-has-current-submenu .wp-submenu {
+	padding: 6px 0px 8px 0px;
+}
+
+.widefat td,
+.widefat td p,
+.widefat td ol,
+.widefat td ul,
+.widefat th {
+	font-size: 13px;
+}
+
+.widefat th {
+	padding: 5px 10px;
+	border-bottom: solid 1px #d9d9d9;
+}
+
+.widefat td {
+	border-bottom: solid 1px #d9d9d9;
+}
+
+.tablenav {
+	padding: 5px 0px;
+}
+
+textarea, input, select {
+	font-size: 12px;
+}
+
+.widefat thead th.check-column {
+	vertical-align: middle;
+	padding-top: 5px;
+}
+
+.widefat thead,
+.widefat tfoot {
+	background: #e0e0e0;
+}
+
+@media screen and (max-width: 782px){
+
+	.auto-fold #adminmenu li a {
+		font-size: 13px;
+		padding: 5px;
+	}
+}

@@ -25,29 +25,11 @@ License: GPL2
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-   /*
-    *
-    * @class BAR_AdminInterface
-    * @author Avenue Factory, Wycks
-    * @version 1.1.0
-    */
-
-    new BAR_AdminInterface();
-
-    class BAR_AdminInterface {
-
-        public $assetsUrl = '';
-
-        public function __construct() {
-
-            $this->assetsUrl = plugins_url( 'css', __FILE__ );
-
-            //Register our enqueue assets only to our admin pages
-            add_action( 'admin_enqueue_scripts', array( $this, 'enqueueAssets' ) );
-        }
-
-        public function enqueueAssets() {
-            wp_enqueue_style( 'bar-admin-interface', $this->assetsUrl . '/bar.css', array(), false, 'all' );
-        }
-
+/**
+ *  Enqueue style in admin
+ */
+function betterAdminReading() {
+    wp_enqueue_style( 'better-admin-reading', plugins_url( 'css', __FILE__ ) . '/better-admin-reading.css', array(), false, 'all' );
     }
+
+add_action( 'admin_enqueue_scripts',  'betterAdminReading' );
